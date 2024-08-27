@@ -1,9 +1,9 @@
-///<reference path="base-component.ts" />
-///<reference path="../util/validation.ts" />
-///<reference path="../decorators/autobind.ts" />
-///<reference path="../state/project-state.ts" />
+import { Component } from "./base-component.js";
+import { Validatable, validate } from "../util/validation.js";
+import { Autobind } from "../decorators/autobind.js";
+import { projectState } from "../state/project-state.js";
 
-namespace App {
+
     export class ProjectInput extends Component<HTMLDivElement, HTMLFormElement> {
         titleInputElement: HTMLInputElement;
         descriptionInputElement: HTMLInputElement;
@@ -74,4 +74,3 @@ namespace App {
             }
         }
     }
-}
